@@ -11,7 +11,7 @@ function onSubmit() {
   let form = document.forms["myForm"]
   console.log(form);
 
-  if(name==""|| date==""|| gender=="" ||message==""){
+  if(name==""|| birthdate==""|| gender=="" ||pesan==""){
     alert("tidak boleh ada form yang kosong");
     return false;
   }
