@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio site</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="./assets/logo.jpg" alt="logo_revou">
+        </div>
+        <nav class="navigator">
+            <a class="nav_items">Home</a>
+            <a href="#Gettoknow" class="nav_items">My Profile</a>
+            <a class="nav_items">Portfolio</a>
+            <a href="#message_me" class="nav_items">Message me</a>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <h1>Hi, I'm Joana, Welcome to my website</h1>
+        <p>Ini adalah website latihan pertama</p>
+        <button class="sound" onclick="sound()">Play sound</button>
+
+    </section>
+
+    <section id="Gettoknow" class="profile">
+        <h1> Get to know me</h1>
+        <div class="profile_items">
+            <div class="circle">
+                <img src="./assets/goal.png" alt="goal">
+                <p> Goals </p>
+            </div>
+            <div class="circle">
+                <img class="img2" src="./assets/hobby.png" alt="Hobby">
+                <p> Hobbies </p>
+            </div>
+            <div class="circle">
+                <img src="./assets/inspire.png" alt="Inspirations">
+                <p> Inspirations </p>
+            </div>
+        </div>
+     </section>
+
+        <section id="message_me" class=open_form>
+            <h1> Message Me</h1>
+        </section>
+        <section class="form">
+            <div class="form_l">
+                <form id="myForm">
+                    <table class="table">
+                        <tr id="tr_name">
+                            <td>Nama</td>
+                            <td>:</td>
+                            <td class="nama"><input id="name" name="name" type="text" placeholder="Name" required></td>
+                        </tr>
+                        <tr id="tr_date">
+                            <td>Tanggal Lahir</td>
+                            <td>:</td>
+                            <td class="ttl"><input id="date" type="date" required></td>
+                        </tr>
+                        <tr id="tr_gender">
+                            <td>Jenis Kelamin</td>
+                            <td>:</td>
+                            <td>
+                                <input id="male" type="radio" value="Laki-laki" name="gender">
+                                <label for="laki-laki"> Laki-laki </label>
+                                <input id="female" type="radio" value="Perempuan" name="gender">
+                                <label for="perempuan"> Perempuan </label>
+                            </td>
+                        </tr>
+                        <tr id="tr_messege">
+                            <td class="pesan1">Pesan</td>
+                            <td class="pesan2">:</td>
+                            <td class="Pesan_form"><input id="message" type="text" name="message"
+                                    placeholder="Your Message" required></td>
+                        </tr>
+                    </table>
+
+                    <input type="submit" class="submit" onclick="onSubmit();return false" value="Submit">
+                    
+                </form>
+
+            </div>
+            <div class="display" id="submitdisplay"></div>
+        </section>
+
+        <footer class="footer">
+            <p class="note">Made by Joana S</p>
+        </footer>
+    </section>
+    <script src="./JS/script.js"></script>
+</body>
+
+</html>
