@@ -1,6 +1,6 @@
 function sound() {
-  var snd = new Audio('../assets/quack.mp3')//wav is also supported
-  snd.play()//plays the sound
+  var snd = new Audio('../assets/quack.mp3')
+  snd.play()
 }
 
 function onSubmit() {
