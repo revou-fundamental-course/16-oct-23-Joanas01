@@ -1,11 +1,8 @@
-* {
-    box-sizing: border-box;
-}
+* {box-sizing: border-box;}
+img {vertical-align: middle;}
 
 html,
 body {
-    padding: 0;
-    margin: 0;
     background-color: #EFEFEF;
     font-family: Helvetica, sans-serif;
 }
@@ -37,7 +34,9 @@ h1, p {
 
 .nav_items {
     padding: 0 1em;
-    border: 0.5px solid rgb(46, 46, 46);
+    border: 1.5px solid rgb(246, 166, 26);
+    border-radius: 10%;
+    margin: 3px;
     min-width: 60px;
     font-size: 14px;
     text-align: center;
@@ -50,17 +49,22 @@ h1, p {
     background-color: #12121233;
 }
 
-
 .banner {
     margin: 0;
     padding: 32px;
     border-bottom: 1px solid grey;
-    background-image: url("../assets/background.jpg");
     background-size: cover;
     background-position: middle;
-    height: 300px;
+    height: 650px;
     width: 100%;
-    color: rgb(245, 182, 22);
+    color: rgb(204, 148, 5);
+}
+
+.img-slideshow{
+    height: 480px;
+    width: 500px;
+    margin-top: 12px;
+    margin-bottom: 5px;
 }
 
 .banner p {
