@@ -5,7 +5,7 @@
     <meta charset='utf-8'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My portfolio site</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" type="type/css" href="./css/style.css">
 </head>
 
 <body>
@@ -25,7 +25,13 @@
         <h1>Hi, I'm Joana, Welcome to my website</h1>
         <p>Ini adalah website latihan pertama</p>
         <button class="sound" onclick="sound()">Play sound</button>
-
+        <div>
+            <img class="img-slideshow" src="../assets/background3.jpg" style="width:100%"/>
+            <img class="img-slideshow" src="../assets/background1.jpg" style="width:100%"/>
+            <img class="img-slideshow" src="../assets/background2.jpg" style="width:100%"/>
+            <button onclick= "plusDivs(-1)">Previous</button>
+            <button onclick= "plusDivs(1)">Next</button>
+        </div> 
     </section>
 
     <section id="Gettoknow" class="profile">
